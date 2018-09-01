@@ -1,0 +1,44 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue scrolling-navbar ie-nav" [containerInside]="false">
+  <mdb-navbar-brand>
+    <a class="logo navbar-brand" href="#">
+      <strong>AWS Blog</strong>
+    </a>
+  </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item waves-light" routerLink="/feed" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link">Public Feed
+        </a>
+      </li>
+      <li class="nav-item waves-light" routerLink="/posts" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link">My Posts</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item waves-light" routerLink="/post" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link">
+          <a class="nav-link">
+            <i class="fa fa-pencil-square-o"></i>
+            New Post
+          </a>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect>
+        <a class="nav-link">
+          <a class="nav-link">Hi Manoj!</a>
+        </a>
+      </li>
+
+      <li class="nav-item waves-light" routerLink="/auth" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link">
+          <a class="nav-link">Login</a>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect *ngIf="false">
+        <a class="nav-link">
+          <a class="nav-link">Logout</a>
+        </a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>

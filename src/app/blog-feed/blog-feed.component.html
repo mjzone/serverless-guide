@@ -1,0 +1,51 @@
+<!-- Section: Blog v.1 -->
+<section class="my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5">Recent posts</h2>
+  <!-- Section description -->
+  <p class="text-center w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <!-- Grid row -->
+  <div class="row" *ngFor="let feed of feeds">
+
+    <!-- Grid column -->
+    <div class="col-lg-5">
+
+      <!-- Featured image -->
+      <div class="view overlay rounded z-depth-2 mb-lg-4 mb-4">
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+      <!-- Post title -->
+      <h3 class="font-weight-bold mb-3">
+        <strong>{{feed.title}}</strong>
+      </h3>
+      <!-- Excerpt -->
+      <p>{{feed.body}}</p>
+      <!-- Post data -->
+      <p>by
+        <a>
+          <strong>Carine Fox</strong>
+        </a>, 11/08/2018</p>
+      <!-- Read more button -->
+      <a class="btn btn-md btn-primary" routerLink="/post/1" routerLinkActive="active">Read more</a>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+  <hr class="my-5">
+
+</section>
+<!-- Section: Blog v.1 -->
